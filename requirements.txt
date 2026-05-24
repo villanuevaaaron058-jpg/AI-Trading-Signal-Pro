@@ -1,19 +1,16 @@
-# AI Trading Signal Pro - Python Dependencies
-# Python 3.10+ Required
-# Updated for compatibility with latest package versions
+# AI Trading Signal Pro - Simplified Requirements
+# Compatible with Python 3.10, 3.11, 3.12, 3.13
+# Removed packages that don't support Python 3.14
 
 # Core GUI Framework
-PySide6>=6.10.0
-Qt-Material>=2.14
+PySide6>=6.10.1
 
 # Data Processing & Analysis
 pandas>=2.0.0
 numpy>=1.24.0
-scipy>=1.10.0
 
-# Technical Indicators
+# Technical Indicators (removed ta-lib, using pandas-ta only)
 pandas-ta>=0.3.14b
-talib-binary>=0.4.28
 
 # Market Data APIs
 binance-connector>=3.5.0
@@ -28,7 +25,6 @@ pydantic>=2.5.0
 
 # Database
 sqlalchemy>=2.0.20
-pyodbc>=5.0.0
 
 # Utilities
 python-dotenv>=1.0.0
@@ -36,7 +32,7 @@ pyyaml>=6.0
 python-dateutil>=2.8.2
 pytz>=2023.3
 
-# Logging & Monitoring
+# Logging
 loguru>=0.7.2
 
 # Notifications
@@ -48,16 +44,11 @@ aiofiles>=23.2.0
 # JSON & Config
 jsonschema>=4.20.0
 
-# Build Tools (Development only)
+# Build Tools
 PyInstaller>=6.3.0
-wheel>=0.42.0
-setuptools>=69.0.0
 
 # Testing (Optional)
 pytest>=7.4.0
-pytest-asyncio>=0.21.0
 
 # Code Quality (Optional)
 black>=23.12.0
-flake8>=6.1.0
-mypy>=1.7.0
